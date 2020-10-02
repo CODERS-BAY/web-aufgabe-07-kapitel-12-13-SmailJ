@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Silent-Nation Photography</title>
+</head>
+
+<body>
+  <img src="img/header.jpg" alt="Header" class="headerimg">
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="infos.html">Infos</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </header>
+  <main>
+    <article>
+      <section class="sectionbg">
+        <form method="get" action="">
+          <div>
+            <label for="vorname">Vorname</label>
+            <input type="text" name="vorname" id="vorname" placeholder="Vor-/Nachname">
+          </div>
+          <div>
+            <label for="emailadresse">E-Mail</label>
+            <input type="email" name="email" placeholder="example@example.xyz">
+          </div>
+          <div>
+            <label for="date">Besuchstag</label>
+            <input type="date" name="date">
+          </div>
+          <div>
+            <label for="time">Besuchszeit</label>
+            <input type="time" name="time">
+          </div>
+          <div>
+            <label for="range">Hat es dir gefallen</label>
+            <input type="range" name="range">
+            <p>Links = nein | Rechts = ja</p>
+          </div>
+          <div>
+            <label for="tellit">Hat es dir gefallen ?</label>
+            <select name="empfehlung" id="empfehlung">
+              <option value="nocomment">NoComment</option>
+              <option value="ja">Ja</option>
+              <option value="nein">Nein</option>
+            </select>
+          </div>
+          <div>
+            <label for="animal">Wuerdest du es weiterempfehlen ?</label>
+            <select name="animal" id="animal">
+              <option value="suchs">Suchs</option>
+              <option value="dir">dir</option>
+              <option value="aus">AUS</option>
+            </select>
+          </div>
+          <div>
+            <label for="comment">Kommentar</label>
+            <input type="text" name="comment" placeholder="Wir freuen uns Ã¼ber einen Kommentar">
+          </div>
+          <div>
+            <label for="besuchsart">Besuchsart</label>
+            <select name="besuchsart" id="besuchsart">
+              <option value="family">Familienausflug</option>
+              <option value="alone">AloneLikaAStone</option>
+              <option value="group">Gruppenausflug</option>
+              <option value="friends">Ausflug mit Freunden</option>
+              <option value="other">was anderes</option>
+            </select>
+          </div>
+          <input type="submit">
+        </form>
+      </section>
+    </article>
+  </main>
+  <footer class="footerwithcontent">
+    <p>&#169; 2018 Silent-Nation | Impressum</p>
+  </footer>
+</body>
+
+</html>

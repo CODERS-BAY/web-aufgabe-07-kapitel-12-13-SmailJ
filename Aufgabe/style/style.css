@@ -1,0 +1,240 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: #0A3601;
+}
+
+/* Header */
+header {
+    margin-top: 0;
+    width: 100%;
+    min-height: 65px;
+    max-height: 65px;
+    background: #0B4200;
+    border-radius: 0px 0px 10px 10px;
+    -moz-border-radius: 0px 0px 10px 10px;
+    -webkit-border-radius: 0px 0px 10px 10px;
+    border-bottom: 4px solid white;
+}
+
+header ul {
+    list-style: none;
+    display: inline-flex;
+}
+
+header ul li {
+    margin: 0 6%;
+    color: white;
+    text-align: center;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Abril;
+    font-size: 25px;
+}
+
+.headerimg {
+    width: 100%;
+    max-height: 60vh;
+    
+}
+
+/* Main */
+main {
+    min-width: 80%;
+    min-height: 80%;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+section {
+    margin: 2% 2%;
+    min-width: 30%;
+    max-width: 30%;
+    height: 40%;
+    border: 5px solid white;
+    text-align: center;
+    padding: 0% 2%;
+    color: white;
+    -webkit-box-shadow: 0px 10px 37px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 10px 37px 0px rgba(255,255,255,1);
+    box-shadow: 0px 10px 37px 0px rgba(255,255,255,1);
+    transition: border-color 0.5s ease-in 0.3s;
+}
+section:hover {
+    border-color: #000000;
+  } 
+
+section h1 {
+    font-size: 35px;
+    font-family: Lobster;
+}
+
+section p {
+    font-family: Satisfy;
+    font-size: 25px;
+}
+
+.spacer {
+    min-width: 60%;
+    max-width: 60%;
+    min-height: 20%;
+}
+
+.spacer p {
+    font-family: Archi;
+}
+
+section iframe {
+    max-width: 100%;
+    max-height: auto;
+}
+
+section ol {
+    text-align: left;
+}
+.sectionbg {
+    background-image: url(../img/kontaktbg.jpg);
+    margin: 2% 2%;
+    min-width: 30%;
+    max-width: 30%;
+    height: 40%;
+    border: 5px solid white;
+    text-align: center;
+    padding: 0% 2%;
+    color: white;
+    -webkit-box-shadow: 0px 10px 37px 0px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 10px 37px 0px rgba(255,255,255,1);
+    box-shadow: 0px 10px 37px 0px rgba(255,255,255,1);
+    transition: border-color 0.5s ease-in 0.3s;
+}
+
+/* TABLE */
+.tablesection {
+    margin: 2% 2%;
+    min-width: 30%;
+    max-width: 60%;
+    height: 40%;
+    border: 5px solid white;
+    text-align: center;
+    padding: 0% 2%;
+    color: white;
+}
+
+.tablesection th {
+    padding: 2% 4%;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.tablesection td {
+    font-family: Roboto;
+}
+
+/* Footer */
+.footernocontent {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #167900;
+    border-top: 3px solid black;
+    text-align: center;
+    color: black;
+}
+
+.footerwithcontent {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #167900;
+    border-top: 3px solid black;
+    text-align: center;
+    color: black;
+}
+
+@media screen and (max-width: 970px) {
+    main {
+        width: 100%;
+    }
+
+    article {
+        display: contents;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section {
+        max-width: 100%;
+    }
+
+    .tablesection {
+        min-width: 80%;
+        max-width: 100%;
+        overflow-y: auto;
+        margin: 2% 2%;
+        text-align: center;
+    }
+
+    .tablesection::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 14px;
+        height: 14px;
+    }
+
+    .tablesection::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        border: 3px solid #fff;
+        background-color: rgba(0, 0, 0, .3);
+    }
+
+    .footernocontent {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #167900;
+        border-top: 3px solid black;
+        text-align: center;
+        color: black;
+    }
+}
+
+/* Fonts */
+@font-face {
+    font-family: Abril;
+    src: url(..//style/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(../style/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Archi;
+    src: url(../style/ArchitectsDaughter-Regular.ttf);
+}
+
+@font-face {
+    font-family: Satisfy;
+    src: url(../style/Satisfy-Regular.ttf);
+}
